@@ -14,10 +14,10 @@ var Pricing = React.createClass({
       <div className="pricing">
         <h2>Pricing</h2>
         <p className="disclaimer">*Please note that blah blah blah.</p>
-        <ul>
-          <Link to="apple"><li>Apple</li></Link>
-          <Link to="samsung"><li>Samsung</li></Link>
-          <Link to="lg"><li>LG</li></Link>
+        <ul className="brands">
+          <Link to="apple"><li><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png"/></li></Link>
+          <Link to="samsung"><li><img src="http://upload.wikimedia.org/wikipedia/fa/9/9b/Samsung_Logo.svg.png"/></li></Link>
+          <Link to="lg"><li><img src="http://upload.wikimedia.org/wikipedia/it/0/0e/LGlogo.png"/></li></Link>
         </ul>
 
         <RouteHandler/>
@@ -31,8 +31,19 @@ var About = React.createClass({
     return (
       <div>
         <h2>About</h2>
-        <p>My name is John; I&#39;m a self-taught tech repair specialist currently living in downtown Fort Collins, Colorado.</p>
+        <p>My name is John; I&#39;m a self-taught tech repair specialist currently living in downtown Fort Collins.</p>
+        <p>CellTech Repairs is a business I started in my final semester of college. I pride myself on meticulous quality in every repair I do, and as I&#39;m the sole proprieter of this business, I guarantee I can beat any competitor&#39;s price!</p>
         <img src="images/john.jpg"/>
+        <p>Please feel free to browse the website for common repair prices, or reach out to me directly for a more precise quote. Thank you for your business!</p>
+
+        <dl>
+          <dt>phone</dt>
+          <dd>1234567890</dd>
+          <dt>email address</dt>
+          <dd>fuck@you.seriousl</dd>
+          <dt>physical address</dt>
+          <dd>643 Remington</dd>
+        </dl>
       </div>
     );
   }
@@ -53,6 +64,9 @@ var Index = React.createClass({
     return (
       <div>
         <h2>Index</h2>
+        <p>Copy about how great John&#39;s business is an why you should choose it over any other repair service</p>
+        <h3>Mission</h3>
+        <p>yer mission and stuff</p>
       </div>
     );
   }

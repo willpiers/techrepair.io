@@ -1,4 +1,5 @@
 @banner-color: #eee;
+@primary-orange: rgb(246, 120, 17);
 
 * {
   font-family: helvetica;
@@ -7,12 +8,6 @@
 body {
   min-width: 800px;
   height: 100%;
-}
-.active {
-  li {
-    background-color: #ccc;
-    border-radius: 5px;
-  }
 }
 a {
   color: #333;
@@ -38,6 +33,13 @@ nav {
   padding: 30px;
   background: @banner-color;
   border-radius: 10px 0px 10px 10px;
+
+  .active {
+    li {
+      background-color: #1cf610;
+      border-radius: 5px;
+    }
+  }
 
   ul {
     padding: 0px;
@@ -80,4 +82,15 @@ dl, dd, dt {
 }
 dt {
   font-weight: bold;
+}
+.brands {
+  .active {
+    border-bottom: 5px solid @primary-orange;
+  }
+
+  img {
+    height: 70px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid white;
+  }
 }
