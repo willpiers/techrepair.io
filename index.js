@@ -1,5 +1,7 @@
 var React = require('react');
-require('./base.less');
+
+require('./styles/bootstrap.min.css')
+require('./styles/base.less');
 
 var Router = require('react-router');
 var Route = Router.Route;
@@ -8,23 +10,7 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
-var Pricing = React.createClass({
-  render: function() {
-    return (
-      <div className="pricing">
-        <h2>Pricing</h2>
-        <p className="disclaimer">*Please note that blah blah blah.</p>
-        <ul className="brands">
-          <Link to="apple"><li><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png"/></li></Link>
-          <Link to="samsung"><li><img src="http://upload.wikimedia.org/wikipedia/fa/9/9b/Samsung_Logo.svg.png"/></li></Link>
-          <Link to="lg"><li><img src="http://upload.wikimedia.org/wikipedia/it/0/0e/LGlogo.png"/></li></Link>
-        </ul>
-
-        <RouteHandler/>
-      </div>
-    );
-  }
-});
+var Pricing = require('./components/pricing/index');
 
 var About = React.createClass({
   render: function() {
@@ -72,61 +58,6 @@ var Index = React.createClass({
   }
 });
 
-var ApplePricing = React.createClass({
-  render: function() {
-    return (
-      <dl>
-        <dt>iPhone</dt>
-        <dd>
-          <dl>
-            <dt>3g/s</dt>
-            <dd>
-              <dl>
-                <dt>Digitizer Replacement</dt>
-                <dd>50 dollars you stupid idiot</dd>
-
-                <dt>LCD Replacement</dt>
-                <dd>50 dollars you stupid idiot</dd>
-
-                <dt>Water Damage</dt>
-                <dd>50 dollars you stupid idiot</dd>
-
-                <dt>Battery Replacement</dt>
-                <dd>50 dollars you stupid idiot</dd>
-              </dl>
-            </dd>
-
-            <dt>4/s</dt>
-            <dd></dd>
-
-            <dt>5/s</dt>
-            <dd></dd>
-
-            <dt>6/+</dt>
-            <dd></dd>
-          </dl>
-        </dd>
-      </dl>
-    );
-  }
-});
-
-var SamsungPricing = React.createClass({
-  render: function() {
-    return (
-      <span>30 bucks idiot</span>
-    );
-  }
-});
-
-var LGPricing = React.createClass({
-  render: function() {
-    return (
-      <span>10 bucks idiot</span>
-    );
-  }
-});
-
 var App = React.createClass({
   render: function () {
     return (
@@ -152,11 +83,11 @@ var App = React.createClass({
 
 var routes = (
   <Route name="app" path="/" handler={App}>
-    <Route name="pricing" handler={Pricing}>
-      <Route name="apple" handler={ApplePricing}/>
-      <Route name="samsung" handler={SamsungPricing}/>
-      <Route name="lg" handler={LGPricing}/>
-      <DefaultRoute handler={ApplePricing}/>
+    <Route name="pricing" handler={Pricing.Main}>
+      <Route name="apple" handler={Pricing.Apple}/>
+      <Route name="samsung" handler={Pricing.Samsung}/>
+      <Route name="lg" handler={Pricing.Lg}/>
+      <DefaultRoute handler={Pricing.Apple}/>
     </Route>
     <Route name="about" handler={About}/>
     <Route name="home" handler={Home}/>

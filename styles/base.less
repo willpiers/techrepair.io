@@ -1,0 +1,104 @@
+@banner-color: #eee;
+@primary-orange: rgb(246, 120, 17);
+
+* {
+  font-family: helvetica;
+  font-weight: lighter;
+}
+body {
+  min-width: 800px;
+  height: 100%;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.disclaimer {
+  font-size: 10px;
+}
+.pricing {
+  ul {
+    list-style: none;
+    padding: 0px;
+
+    li {
+      display: inline;
+      padding: 3px 10px;
+    }
+  }
+}
+nav {
+  display: table-cell;
+  width: 250px;
+  padding: 30px;
+  background: @banner-color;
+  border-radius: 10px 0px 10px 10px;
+
+  .active {
+    li {
+      background-color: #1cf610;
+      border-radius: 5px;
+    }
+  }
+
+  ul {
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+
+    li {
+      padding: 10px 0px;
+      border-bottom: 1px solid black;
+
+      &:last-child {
+       border-bottom: none;
+      }
+    }
+  }
+}
+.content {
+  display: table-cell;
+  padding: 0px;
+  width: 100%;
+  vertical-align: top;
+  text-align: center;
+}
+.logo {
+  width: 100px;
+}
+#banner {
+  width: 100%;
+  padding: 15px 0px;
+  background: @banner-color;
+  border-radius: 0px 10px 10px 0px;
+
+  img {
+    height: 100px;
+  }
+}
+dl, dd, dt {
+  margin: 0px;
+  padding: 0px
+}
+dt {
+  font-weight: bold;
+}
+.brands {
+  .active {
+    border-bottom: 5px solid @primary-orange;
+    display: inline-block;
+  }
+
+  img {
+    height: 70px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid white;
+  }
+}
+.pricing {
+  padding: 20px;
+
+  table {
+    text-align: left;
+  }
+}
