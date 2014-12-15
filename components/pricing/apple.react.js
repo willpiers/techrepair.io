@@ -5,7 +5,7 @@ module.exports = React.createClass({
     return (
       <table className="table table-hover table-striped">
         <thead>
-          <th>key thing</th>
+          <th><strong>Model</strong>/<strong>Service</strong></th>
           <th>3g/s</th>
           <th>4/s</th>
           <th>5/s</th>
