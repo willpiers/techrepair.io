@@ -17,19 +17,23 @@ var About = React.createClass({
     return (
       <div>
         <h2>About</h2>
-        <p>My name is John; I&#39;m a self-taught tech repair specialist currently living in downtown Fort Collins.</p>
-        <p>CellTech Repairs is a business I started in my final semester of college. I pride myself on meticulous quality in every repair I do, and as I&#39;m the sole proprieter of this business, I guarantee I can beat any competitor&#39;s price!</p>
-        <img src="images/john.jpg"/>
-        <p>Please feel free to browse the website for common repair prices, or reach out to me directly for a more precise quote. Thank you for your business!</p>
-
-        <dl>
-          <dt>phone</dt>
-          <dd>1234567890</dd>
-          <dt>email address</dt>
-          <dd>fuck@you.seriousl</dd>
-          <dt>physical address</dt>
-          <dd>643 Remington</dd>
-        </dl>
+        <img className="split john-pic" src="images/john.jpg"/>
+        
+        <div className="split john-info">
+          <p>My name is John; I&#39;m a self-taught tech repair specialist currently living in downtown Fort Collins.</p>
+          <p>CellTech Repairs is a business I started in my final semester of college. I pride myself on meticulous quality in every repair I do, and as I&#39;m the sole proprieter of this business, I guarantee I can beat any competitor&#39;s price!</p>
+          <div className="john-contact-info">
+            <p>Please feel free to browse the website for common repair prices, or reach out to me directly for a more precise quote. Thank you for your business!</p>
+            <dl>
+              <dt>phone</dt>
+              <dd>1234567890</dd>
+              <dt>email address</dt>
+              <dd>fuck@you.seriousl</dd>
+              <dt>physical address</dt>
+              <dd>643 Remington</dd>
+            </dl>
+          </div>
+        </div>
       </div>
     );
   }

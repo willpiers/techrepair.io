@@ -3,9 +3,13 @@ var React = require('react');
 module.exports = React.createClass({
   render: function() {
     return (
-      <table className="table table-hover table-striped">
+      <table className="table table-hover table-striped table-condensed">
         <thead>
-          <th><strong>Model</strong>/<strong>Service</strong></th>
+          <th>
+            {String.fromCharCode(8595) + ' Service'}
+            <span className="divider">|</span>
+            {'Model ' + String.fromCharCode(8594)}
+          </th>
           <th>3g/s</th>
           <th>4/s</th>
           <th>5/s</th>
