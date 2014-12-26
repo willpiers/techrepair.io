@@ -14,6 +14,9 @@ a {
     color: #333
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
 .divider {
   padding: 0 5px;
   font-size: 20px;
@@ -36,6 +39,7 @@ nav {
 
   .active {
     text-decoration: none;
+    color: black;
 
     li {
       background-color: #1cf610;
@@ -86,8 +90,10 @@ dl, dd, dt {
 dt {
   font-weight: bold;
 }
-.pricing {
+.subsection {
   padding: 20px;
+}
+.pricing {
 
   table {
     text-align: left;
@@ -114,6 +120,7 @@ dt {
     a {
       border-bottom: 5px solid white;
       display: inline-block; 
+      width: 33%;
     }
 
     .active {
@@ -122,13 +129,17 @@ dt {
     }
 
     li {
-      display: inline;
+      display: inline-block;
       padding: 3px 10px;
+      width: 100%;
     }
   }
 }
 
-@media screen and (max-width: 740px) {
+@media only screen and (max-device-width: 640px), 
+only screen and (max-device-width: 667px),
+only screen and (max-width: 480px),
+screen and (max-width: 740px) {
   #banner {
     display: none;
   }
@@ -140,23 +151,41 @@ dt {
     background: none;
     width: 100%;
     padding: 5px;
+    font-size: 3em;
 
     ul {
-      padding: 0px;
+      padding: 5px;
       list-style: none;
       text-align: center;
       margin-top: 10px;
+      background-color: #ddd;
+      margin-bottom: 0;
+      border-radius: 5px;
 
       li {
         padding: 5px 10px;
-        margin: 0px 5px;
+        margin: 0;
         border-bottom: 1px solid black;
-        display: inline;
+        display: inline-block;
+        width: 33%;
       }
     }
 
     #logo-link {
       display: none;
+    }
+  }
+  .subsection {
+    font-size: 2em;
+
+    h2 {
+      display: none;
+    }
+
+    ul.brands {
+      img {
+        height: 50px;
+      }
     }
   }
 }

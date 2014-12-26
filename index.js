@@ -15,7 +15,7 @@ var Pricing = require('./components/pricing/index');
 var About = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="about subsection">
         <h2>About</h2>
         <img className="split john-pic" src="images/john.jpg"/>
         
@@ -42,21 +42,9 @@ var About = React.createClass({
 var Home = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="home subsection">
         <h2>Home</h2>
-      </div>
-    );
-  }
-});
-
-var Index = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <h2>Index</h2>
         <p>Copy about how great John&#39;s business is an why you should choose it over any other repair service</p>
-        <h3>Mission</h3>
-        <p>yer mission and stuff</p>
       </div>
     );
   }
@@ -95,7 +83,7 @@ var routes = (
     </Route>
     <Route name="about" handler={About}/>
     <Route name="home" handler={Home}/>
-    <DefaultRoute handler={Index}/>
+    <DefaultRoute handler={Home}/>
   </Route>
 );
 
