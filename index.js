@@ -67,7 +67,7 @@ var App = React.createClass({
     return (
       <div style={{'height': '100%'}}>
         <nav>
-          <Link to="/"><img src="images/celltech_logo.png" className="logo"/></Link>
+          <Link to="/" id="logo-link"><img src="images/celltech_logo.png" className="logo"/></Link>
           <ul>
             <Link to="home"><li>Home</li></Link>
             <Link to="pricing"><li>Pricing</li></Link>

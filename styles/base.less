@@ -6,15 +6,12 @@
   font-weight: lighter;
 }
 body {
-  min-width: 800px;
   height: 100%;
 }
 a {
-  color: #333;
-  text-decoration: none;
-
-  &:hover {
+  &, &:hover, &:hover {
     text-decoration: none;
+    color: #333
   }
 }
 .divider {
@@ -38,6 +35,8 @@ nav {
   border-radius: 10px 0px 10px 10px;
 
   .active {
+    text-decoration: none;
+
     li {
       background-color: #1cf610;
       border-radius: 5px;
@@ -125,6 +124,39 @@ dt {
     li {
       display: inline;
       padding: 3px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #banner {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  nav {
+    display: inline-block;
+    background: none;
+    width: 100%;
+    padding: 5px;
+
+    ul {
+      padding: 0px;
+      list-style: none;
+      text-align: center;
+      margin-top: 10px;
+
+      li {
+        padding: 5px 10px;
+        margin: 0px 5px;
+        border-bottom: 1px solid black;
+        display: inline;
+      }
+    }
+
+    #logo-link {
+      display: none;
     }
   }
 }
