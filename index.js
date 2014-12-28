@@ -11,27 +11,30 @@ var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
 var Pricing = require('./components/pricing/index');
+var About = require('./components/about/about.react');
+var Home = require('./components/home/home.react');
 
-var About = React.createClass({
-  render: function() {
+var App = React.createClass({
+  render: function () {
     return (
-      <div className="about subsection">
-        <h2>About</h2>
-        <img className="split john-pic" src="images/john.jpg"/>
-        
-        <div className="split john-info">
-          <p>My name is John; I&#39;m a self-taught tech repair specialist currently living in downtown Fort Collins.</p>
-          <p>CellTech Repairs is a business I started in my final semester of college. I pride myself on meticulous quality in every repair I do, and as I&#39;m the sole proprieter of this business, I guarantee I can beat any competitor&#39;s price!</p>
-          <div className="john-contact-info">
-            <p>Please feel free to browse the website for common repair prices, or reach out to me directly for a more precise quote. Thank you for your business!</p>
-            <dl>
-              <dt>phone</dt>
-              <dd>1234567890</dd>
-              <dt>email address</dt>
-              <dd>fuck@you.seriousl</dd>
-              <dt>physical address</dt>
-              <dd>643 Remington</dd>
-            </dl>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-xs-12 col-sm-2'>
+            <div className='nav'>
+              <Link to="home" className='hidden-xs'>
+                <img src="images/celltech_logo.png" className="img-responsive hidden-xs"/>
+              </Link>
+              <ul>
+                <Link to="about"><li>About</li></Link>
+                <Link to="pricing"><li>Pricing</li></Link>
+              </ul>
+            </div>
+          </div>
+          <div className="content col-xs-12 col-sm-10">
+            <div className='hidden-xs' id="banner">
+              <img src="images/celltech_banner.png"/>
+            </div>
+            <RouteHandler/>
           </div>
         </div>
       </div>
@@ -39,42 +42,8 @@ var About = React.createClass({
   }
 });
 
-var Home = React.createClass({
-  render: function() {
-    return (
-      <div className="home subsection">
-        <h2>Home</h2>
-        <p>Copy about how great John&#39;s business is an why you should choose it over any other repair service</p>
-      </div>
-    );
-  }
-});
-
-var App = React.createClass({
-  render: function () {
-    return (
-      <div style={{'height': '100%'}}>
-        <nav>
-          <Link to="/" id="logo-link"><img src="images/celltech_logo.png" className="logo"/></Link>
-          <ul>
-            <Link to="home"><li>Home</li></Link>
-            <Link to="pricing"><li>Pricing</li></Link>
-            <Link to="about"><li>About</li></Link>
-          </ul>
-        </nav>
-        <div className="content">
-        <div id="banner">
-          <img src="images/celltech_banner.png"/>
-        </div>
-          <RouteHandler/>
-        </div>
-      </div>
-    );
-  }
-});
-
 var routes = (
-  <Route name="app" path="/" handler={App}>
+  <Route name="home" path="/" handler={App}>
     <Route name="pricing" handler={Pricing.Main}>
       <Route name="apple" handler={Pricing.Apple}/>
       <Route name="samsung" handler={Pricing.Samsung}/>
@@ -82,7 +51,7 @@ var routes = (
       <DefaultRoute handler={Pricing.Apple}/>
     </Route>
     <Route name="about" handler={About}/>
-    <Route name="home" handler={Home}/>
+
     <DefaultRoute handler={Home}/>
   </Route>
 );

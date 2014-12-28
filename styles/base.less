@@ -5,21 +5,14 @@
   font-family: helvetica;
   font-weight: lighter;
 }
-body {
-  height: 100%;
-}
 a {
-  &, &:hover, &:hover {
+  &, &:hover, &:focus, &:link {
     text-decoration: none;
     color: #333
   }
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-}
-.divider {
-  padding: 0 5px;
-  font-size: 20px;
 }
 .disclaimer {
   font-size: 10px;
@@ -30,28 +23,19 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: top;
   padding: 20px;
 }
-nav {
-  display: table-cell;
-  width: 250px;
-  padding: 30px;
+div.nav {
   background: @banner-color;
-  border-radius: 10px 0px 10px 10px;
+  text-align: center;
+  padding: 15px;
 
-  .active {
-    text-decoration: none;
-    color: black;
-
-    li {
-      background-color: #1cf610;
-      border-radius: 5px;
-    }
+  .active li {
+    background-color: @primary-orange;
+    border-radius: 5px;
   }
 
   ul {
-    padding: 0px;
+    padding: 20px 0;
     list-style: none;
-    text-align: center;
-    margin-top: 30px;
 
     li {
       padding: 10px 0px;
@@ -64,20 +48,11 @@ nav {
   }
 }
 .content {
-  display: table-cell;
-  padding: 0px;
-  width: 100%;
-  vertical-align: top;
   text-align: center;
 }
-.logo {
-  width: 100px;
-}
 #banner {
-  width: 100%;
   padding: 15px 0px;
   background: @banner-color;
-  border-radius: 0px 10px 10px 0px;
 
   img {
     height: 100px;
@@ -114,7 +89,6 @@ dt {
     img {
       height: 70px;
       padding-bottom: 5px;
-      border-bottom: 5px solid white;
     }
 
     a {
@@ -146,7 +120,7 @@ screen and (max-width: 740px) {
   .content {
     display: block;
   }
-  nav {
+  div.nav {
     display: inline-block;
     background: none;
     width: 100%;
@@ -167,12 +141,8 @@ screen and (max-width: 740px) {
         margin: 0;
         border-bottom: 1px solid black;
         display: inline-block;
-        width: 33%;
+        width: 50%;
       }
-    }
-
-    #logo-link {
-      display: none;
     }
   }
   .subsection {

@@ -8,7 +8,6 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="pricing subsection">
-        <h2>Pricing</h2>
         <p className="disclaimer">*Please note that blah blah blah.</p>
         <ul className="brands">
           <Link to="samsung"><li><img src="http://upload.wikimedia.org/wikipedia/fa/9/9b/Samsung_Logo.svg.png"/></li></Link>
