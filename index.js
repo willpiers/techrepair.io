@@ -21,8 +21,9 @@ var App = React.createClass({
         <div className='row'>
           <div className='col-xs-12 col-md-2'>
             <div className='nav'>
-              <Link to="home" className='hidden-xs'>
-                <img src="images/celltech_logo.png" className="img-responsive hidden-sm"/>
+              <Link to="home">
+                <img src="images/celltech_logo.png" className="img-responsive hidden-sm hidden-xs"/>
+                <img src="images/celltech_banner.png" className="img-responsive visible-xs-block visible-sm-block"/>
               </Link>
               <ul>
                 <Link to="about"><li>About</li></Link>

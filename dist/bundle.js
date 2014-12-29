@@ -67,8 +67,9 @@
 	        React.createElement("div", {className: "row"}, 
 	          React.createElement("div", {className: "col-xs-12 col-md-2"}, 
 	            React.createElement("div", {className: "nav"}, 
-	              React.createElement(Link, {to: "home", className: "hidden-xs"}, 
-	                React.createElement("img", {src: "images/celltech_logo.png", className: "img-responsive hidden-sm"})
+	              React.createElement(Link, {to: "home"}, 
+	                React.createElement("img", {src: "images/celltech_logo.png", className: "img-responsive hidden-sm hidden-xs"}), 
+	                React.createElement("img", {src: "images/celltech_banner.png", className: "img-responsive visible-xs-block visible-sm-block"})
 	              ), 
 	              React.createElement("ul", null, 
 	                React.createElement(Link, {to: "about"}, React.createElement("li", null, "About")), 
@@ -235,7 +236,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(15)();
-	exports.push([module.id, "* {\n  font-family: helvetica;\n  font-weight: lighter;\n}\na,\na:hover,\na:focus,\na:link {\n  text-decoration: none;\n  color: #333333;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n}\ndiv.nav {\n  background: #eeeeee;\n  text-align: center;\n  padding: 15px;\n}\ndiv.nav .active li {\n  background-color: #f67811;\n  border-radius: 5px;\n}\ndiv.nav ul {\n  padding: 20px 0;\n  list-style: none;\n}\ndiv.nav ul li {\n  padding: 10px 0px;\n  border-bottom: 1px solid black;\n}\ndiv.nav ul li:last-child {\n  border-bottom: none;\n}\n.content {\n  text-align: center;\n  padding-bottom: 20px;\n}\n.content .row {\n  padding-top: 10px;\n}\n#banner {\n  padding: 15px 0px;\n  background: #eeeeee;\n}\n#banner img {\n  height: 100px;\n}\ndl,\ndd,\ndt {\n  margin: 0px;\n  padding: 0px;\n}\ndt {\n  font-weight: bold;\n}\n.subsection {\n  padding: 20px;\n}\n.about {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n.pricing table {\n  text-align: left;\n}\n.pricing table th {\n  font-weight: bold;\n}\n.pricing table th:first-child {\n  font-weight: normal;\n}\n.pricing ul.brands {\n  list-style: none;\n  padding: 0px;\n}\n.pricing ul.brands img {\n  height: 45px;\n  padding-bottom: 5px;\n  margin: auto;\n}\n.pricing ul.brands a {\n  border-bottom: 5px solid white;\n}\n.pricing ul.brands .active {\n  border-bottom: 5px solid #f67811;\n}\n.pricing ul.brands li {\n  padding: 3px 10px;\n  width: 100%;\n}\n@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px), screen and (max-width: 740px) {\n  #banner {\n    display: none;\n  }\n  .content {\n    display: block;\n  }\n  div.nav {\n    display: inline-block;\n    background: none;\n    width: 100%;\n    padding: 5px;\n    font-size: 3em;\n  }\n  div.nav ul {\n    padding: 5px;\n    list-style: none;\n    text-align: center;\n    margin-top: 10px;\n    background-color: #ddd;\n    margin-bottom: 0;\n    border-radius: 5px;\n  }\n  div.nav ul li {\n    padding: 5px 10px;\n    margin: 0;\n    border-bottom: 1px solid black;\n    display: inline-block;\n    width: 50%;\n  }\n  .subsection {\n    font-size: 2em;\n  }\n  .subsection h2 {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, "* {\n  font-family: helvetica;\n  font-weight: lighter;\n}\na,\na:hover,\na:focus,\na:link {\n  text-decoration: none;\n  color: #333333;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n}\ndiv.nav {\n  background: #eeeeee;\n  text-align: center;\n  padding: 15px;\n}\ndiv.nav .active li {\n  background-color: #f67811;\n  border-radius: 5px;\n}\ndiv.nav ul {\n  padding: 20px 0;\n  list-style: none;\n}\ndiv.nav ul li {\n  padding: 10px 0px;\n  border-bottom: 1px solid black;\n}\ndiv.nav ul li:last-child {\n  border-bottom: none;\n}\n.content {\n  text-align: center;\n  padding-bottom: 20px;\n}\n.content .row {\n  padding-top: 10px;\n}\n#banner {\n  padding: 15px 0px;\n  background: #eeeeee;\n}\n#banner img {\n  height: 100px;\n}\ndl,\ndd,\ndt {\n  margin: 0px;\n  padding: 0px;\n}\ndt {\n  font-weight: bold;\n}\n.subsection {\n  padding: 20px;\n}\n.about {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n.pricing table {\n  text-align: left;\n}\n.pricing table th {\n  font-weight: bold;\n}\n.pricing table th:first-child {\n  font-weight: normal;\n}\n.pricing ul.brands {\n  list-style: none;\n  padding: 0px;\n}\n.pricing ul.brands img {\n  height: 45px;\n  padding-bottom: 5px;\n  margin: auto;\n}\n.pricing ul.brands a {\n  border-bottom: 5px solid white;\n}\n.pricing ul.brands .active {\n  border-bottom: 5px solid #f67811;\n}\n.pricing ul.brands li {\n  padding: 3px 10px;\n  width: 100%;\n}\n@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px), screen and (max-width: 740px) {\n  #banner {\n    display: none;\n  }\n  .content {\n    display: block;\n  }\n  div.nav {\n    display: inline-block;\n    background: none;\n    width: 100%;\n    padding: 5px;\n    font-size: 2em;\n  }\n  div.nav ul {\n    padding: 5px;\n    list-style: none;\n    text-align: center;\n    margin-top: 10px;\n    background-color: #ddd;\n    margin-bottom: 0;\n    border-radius: 5px;\n  }\n  div.nav ul li {\n    padding: 5px 10px;\n    margin: 0;\n    border-bottom: 1px solid black;\n    display: inline-block;\n    width: 50%;\n  }\n  .subsection {\n    font-size: 2em;\n  }\n  .subsection h2 {\n    display: none;\n  }\n}\n", ""]);
 
 /***/ },
 /* 9 */
@@ -2395,7 +2396,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 
 	var invariant = __webpack_require__(59);
 
@@ -2619,9 +2620,9 @@
 
 	"use strict";
 
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 
-	var traverseAllChildren = __webpack_require__(77);
+	var traverseAllChildren = __webpack_require__(76);
 	var warning = __webpack_require__(61);
 
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -10103,82 +10104,6 @@
 /* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * Copyright 2013-2014, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule EventConstants
-	 */
-
-	"use strict";
-
-	var keyMirror = __webpack_require__(80);
-
-	var PropagationPhases = keyMirror({bubbled: null, captured: null});
-
-	/**
-	 * Types of raw signals from the browser caught at the top level.
-	 */
-	var topLevelTypes = keyMirror({
-	  topBlur: null,
-	  topChange: null,
-	  topClick: null,
-	  topCompositionEnd: null,
-	  topCompositionStart: null,
-	  topCompositionUpdate: null,
-	  topContextMenu: null,
-	  topCopy: null,
-	  topCut: null,
-	  topDoubleClick: null,
-	  topDrag: null,
-	  topDragEnd: null,
-	  topDragEnter: null,
-	  topDragExit: null,
-	  topDragLeave: null,
-	  topDragOver: null,
-	  topDragStart: null,
-	  topDrop: null,
-	  topError: null,
-	  topFocus: null,
-	  topInput: null,
-	  topKeyDown: null,
-	  topKeyPress: null,
-	  topKeyUp: null,
-	  topLoad: null,
-	  topMouseDown: null,
-	  topMouseMove: null,
-	  topMouseOut: null,
-	  topMouseOver: null,
-	  topMouseUp: null,
-	  topPaste: null,
-	  topReset: null,
-	  topScroll: null,
-	  topSelectionChange: null,
-	  topSubmit: null,
-	  topTextInput: null,
-	  topTouchCancel: null,
-	  topTouchEnd: null,
-	  topTouchMove: null,
-	  topTouchStart: null,
-	  topWheel: null
-	});
-
-	var EventConstants = {
-	  topLevelTypes: topLevelTypes,
-	  PropagationPhases: PropagationPhases
-	};
-
-	module.exports = EventConstants;
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
 	/* WEBPACK VAR INJECTION */(function(process) {/**
 	 * Copyright 2013-2014, Facebook, Inc.
 	 * All rights reserved.
@@ -10295,7 +10220,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(71)))
 
 /***/ },
-/* 77 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -10481,6 +10406,82 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(71)))
 
 /***/ },
+/* 77 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2014, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule EventConstants
+	 */
+
+	"use strict";
+
+	var keyMirror = __webpack_require__(80);
+
+	var PropagationPhases = keyMirror({bubbled: null, captured: null});
+
+	/**
+	 * Types of raw signals from the browser caught at the top level.
+	 */
+	var topLevelTypes = keyMirror({
+	  topBlur: null,
+	  topChange: null,
+	  topClick: null,
+	  topCompositionEnd: null,
+	  topCompositionStart: null,
+	  topCompositionUpdate: null,
+	  topContextMenu: null,
+	  topCopy: null,
+	  topCut: null,
+	  topDoubleClick: null,
+	  topDrag: null,
+	  topDragEnd: null,
+	  topDragEnter: null,
+	  topDragExit: null,
+	  topDragLeave: null,
+	  topDragOver: null,
+	  topDragStart: null,
+	  topDrop: null,
+	  topError: null,
+	  topFocus: null,
+	  topInput: null,
+	  topKeyDown: null,
+	  topKeyPress: null,
+	  topKeyUp: null,
+	  topLoad: null,
+	  topMouseDown: null,
+	  topMouseMove: null,
+	  topMouseOut: null,
+	  topMouseOver: null,
+	  topMouseUp: null,
+	  topPaste: null,
+	  topReset: null,
+	  topScroll: null,
+	  topSelectionChange: null,
+	  topSubmit: null,
+	  topTextInput: null,
+	  topTouchCancel: null,
+	  topTouchEnd: null,
+	  topTouchMove: null,
+	  topTouchStart: null,
+	  topWheel: null
+	});
+
+	var EventConstants = {
+	  topLevelTypes: topLevelTypes,
+	  PropagationPhases: PropagationPhases
+	};
+
+	module.exports = EventConstants;
+
+
+/***/ },
 /* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10657,7 +10658,7 @@
 	"use strict";
 
 	var CallbackQueue = __webpack_require__(134);
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 	var ReactCurrentOwner = __webpack_require__(38);
 	var ReactPerf = __webpack_require__(48);
 	var Transaction = __webpack_require__(135);
@@ -11830,7 +11831,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPluginHub = __webpack_require__(142);
 	var EventPluginRegistry = __webpack_require__(143);
 	var ReactEventEmitterMixin = __webpack_require__(144);
@@ -12258,7 +12259,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPropagators = __webpack_require__(146);
 	var ExecutionEnvironment = __webpack_require__(55);
 	var SyntheticInputEvent = __webpack_require__(147);
@@ -12483,7 +12484,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPluginHub = __webpack_require__(142);
 	var EventPropagators = __webpack_require__(146);
 	var ExecutionEnvironment = __webpack_require__(55);
@@ -12899,7 +12900,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPropagators = __webpack_require__(146);
 	var ExecutionEnvironment = __webpack_require__(55);
 	var ReactInputSelection = __webpack_require__(150);
@@ -13206,7 +13207,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPropagators = __webpack_require__(146);
 	var SyntheticMouseEvent = __webpack_require__(153);
 
@@ -13540,7 +13541,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 
 	var emptyFunction = __webpack_require__(125);
 
@@ -13872,7 +13873,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var LocalEventTrapMixin = __webpack_require__(158);
 	var ReactBrowserComponentMixin = __webpack_require__(92);
 	var ReactCompositeComponent = __webpack_require__(36);
@@ -13926,7 +13927,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var LocalEventTrapMixin = __webpack_require__(158);
 	var ReactBrowserComponentMixin = __webpack_require__(92);
 	var ReactCompositeComponent = __webpack_require__(36);
@@ -14550,7 +14551,7 @@
 
 	var EventListener = __webpack_require__(160);
 	var ExecutionEnvironment = __webpack_require__(55);
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 	var ReactInstanceHandles = __webpack_require__(44);
 	var ReactMount = __webpack_require__(46);
 	var ReactUpdates = __webpack_require__(79);
@@ -14779,7 +14780,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPropagators = __webpack_require__(146);
 	var ReactInputSelection = __webpack_require__(150);
 	var SyntheticEvent = __webpack_require__(148);
@@ -15013,7 +15014,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPluginUtils = __webpack_require__(33);
 	var EventPropagators = __webpack_require__(146);
 	var SyntheticClipboardEvent = __webpack_require__(165);
@@ -16029,7 +16030,7 @@
 
 	var ReactTextComponent = __webpack_require__(51);
 
-	var traverseAllChildren = __webpack_require__(77);
+	var traverseAllChildren = __webpack_require__(76);
 	var warning = __webpack_require__(61);
 
 	/**
@@ -16190,7 +16191,7 @@
 
 	"use strict";
 
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 	var CallbackQueue = __webpack_require__(134);
 	var ReactPutListenerQueue = __webpack_require__(177);
 	var Transaction = __webpack_require__(135);
@@ -16534,7 +16535,7 @@
 
 	"use strict";
 
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 
 	var assign = __webpack_require__(52);
 	var invariant = __webpack_require__(59);
@@ -17927,7 +17928,7 @@
 
 	"use strict";
 
-	var EventConstants = __webpack_require__(75);
+	var EventConstants = __webpack_require__(77);
 	var EventPluginHub = __webpack_require__(142);
 
 	var accumulateInto = __webpack_require__(180);
@@ -18124,7 +18125,7 @@
 
 	"use strict";
 
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 
 	var assign = __webpack_require__(52);
 	var emptyFunction = __webpack_require__(125);
@@ -18842,7 +18843,7 @@
 	"use strict";
 
 	var CallbackQueue = __webpack_require__(134);
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 	var ReactBrowserEventEmitter = __webpack_require__(93);
 	var ReactInputSelection = __webpack_require__(150);
 	var ReactPutListenerQueue = __webpack_require__(177);
@@ -20373,7 +20374,7 @@
 
 	"use strict";
 
-	var PooledClass = __webpack_require__(76);
+	var PooledClass = __webpack_require__(75);
 	var ReactBrowserEventEmitter = __webpack_require__(93);
 
 	var assign = __webpack_require__(52);
@@ -21297,8 +21298,8 @@
 	 */
 
 	var base64 = __webpack_require__(207)
-	var ieee754 = __webpack_require__(204)
-	var isArray = __webpack_require__(205)
+	var ieee754 = __webpack_require__(205)
+	var isArray = __webpack_require__(204)
 
 	exports.Buffer = Buffer
 	exports.SlowBuffer = Buffer
@@ -24109,6 +24110,45 @@
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
+	
+	/**
+	 * isArray
+	 */
+
+	var isArray = Array.isArray;
+
+	/**
+	 * toString
+	 */
+
+	var str = Object.prototype.toString;
+
+	/**
+	 * Whether or not the given `val`
+	 * is an array.
+	 *
+	 * example:
+	 *
+	 *        isArray([]);
+	 *        // > true
+	 *        isArray(arguments);
+	 *        // > false
+	 *        isArray('');
+	 *        // > false
+	 *
+	 * @param {mixed} val
+	 * @return {bool}
+	 */
+
+	module.exports = isArray || function (val) {
+	  return !! val && '[object Array]' == str.call(val);
+	};
+
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
 	exports.read = function(buffer, offset, isLE, mLen, nBytes) {
 	  var e, m,
 	      eLen = nBytes * 8 - mLen - 1,
@@ -24192,45 +24232,6 @@
 	  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8);
 
 	  buffer[offset + i - d] |= s * 128;
-	};
-
-
-/***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * isArray
-	 */
-
-	var isArray = Array.isArray;
-
-	/**
-	 * toString
-	 */
-
-	var str = Object.prototype.toString;
-
-	/**
-	 * Whether or not the given `val`
-	 * is an array.
-	 *
-	 * example:
-	 *
-	 *        isArray([]);
-	 *        // > true
-	 *        isArray(arguments);
-	 *        // > false
-	 *        isArray('');
-	 *        // > false
-	 *
-	 * @param {mixed} val
-	 * @return {bool}
-	 */
-
-	module.exports = isArray || function (val) {
-	  return !! val && '[object Array]' == str.call(val);
 	};
 
 
