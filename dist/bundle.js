@@ -127,13 +127,13 @@
 	var About = React.createClass({displayName: 'About',
 	  render: function() {
 	    return (
-	      React.createElement("div", {className: "about subsection"}, 
-	        React.createElement("img", {className: "split john-pic", src: "images/john.jpg"}), 
+	      React.createElement("div", {className: "about row"}, 
+	        React.createElement("img", {className: "col-xs-12 col-sm-3 col-sm-offset-1", src: "images/john.jpg"}), 
 	        
-	        React.createElement("div", {className: "split john-info"}, 
+	        React.createElement("div", {className: "col-xs-12 col-sm-7"}, 
 	          React.createElement("p", null, "My name is John; I'm a self-taught tech repair specialist currently living in downtown Fort Collins."), 
 	          React.createElement("p", null, "CellTech Repairs is a business I started in my final semester of college. I pride myself on meticulous quality in every repair I do, and as I'm the sole proprieter of this business, I guarantee I can beat any competitor's price!"), 
-	          React.createElement("div", {className: "john-contact-info"}, 
+	          React.createElement("div", null, 
 	            React.createElement("p", null, "Please feel free to browse the website for common repair prices, or reach out to me directly for a more precise quote. Thank you for your business!"), 
 	            React.createElement("dl", null, 
 	              React.createElement("dt", null, "phone"), 
@@ -161,7 +161,7 @@
 	var Home = React.createClass({displayName: 'Home',
 	  render: function() {
 	    return (
-	      React.createElement("div", {className: "home subsection"}, 
+	      React.createElement("div", {className: "home"}, 
 	        React.createElement("p", null, "Copy about how great John's business is an why you should choose it over any other repair service")
 	      )
 	    );
@@ -235,7 +235,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(15)();
-	exports.push([module.id, "* {\n  font-family: helvetica;\n  font-weight: lighter;\n}\na,\na:hover,\na:focus,\na:link {\n  text-decoration: none;\n  color: #333333;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n}\n.disclaimer {\n  font-size: 10px;\n}\n.split {\n  display: inline-block;\n  width: 50%;\n  vertical-align: top;\n  padding: 20px;\n}\ndiv.nav {\n  background: #eeeeee;\n  text-align: center;\n  padding: 15px;\n}\ndiv.nav .active li {\n  background-color: #f67811;\n  border-radius: 5px;\n}\ndiv.nav ul {\n  padding: 20px 0;\n  list-style: none;\n}\ndiv.nav ul li {\n  padding: 10px 0px;\n  border-bottom: 1px solid black;\n}\ndiv.nav ul li:last-child {\n  border-bottom: none;\n}\n.content {\n  text-align: center;\n}\n#banner {\n  padding: 15px 0px;\n  background: #eeeeee;\n}\n#banner img {\n  height: 100px;\n}\ndl,\ndd,\ndt {\n  margin: 0px;\n  padding: 0px;\n}\ndt {\n  font-weight: bold;\n}\n.subsection {\n  padding: 20px;\n}\n.pricing table {\n  text-align: left;\n}\n.pricing table th {\n  font-weight: bold;\n}\n.pricing table th:first-child {\n  font-weight: normal;\n}\n.pricing ul.brands {\n  list-style: none;\n  padding: 0px;\n}\n.pricing ul.brands img {\n  height: 70px;\n  padding-bottom: 5px;\n}\n.pricing ul.brands a {\n  border-bottom: 5px solid white;\n  display: inline-block;\n  width: 33%;\n}\n.pricing ul.brands .active {\n  border-bottom: 5px solid #f67811;\n  display: inline-block;\n}\n.pricing ul.brands li {\n  display: inline-block;\n  padding: 3px 10px;\n  width: 100%;\n}\n@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px), screen and (max-width: 740px) {\n  #banner {\n    display: none;\n  }\n  .content {\n    display: block;\n  }\n  div.nav {\n    display: inline-block;\n    background: none;\n    width: 100%;\n    padding: 5px;\n    font-size: 3em;\n  }\n  div.nav ul {\n    padding: 5px;\n    list-style: none;\n    text-align: center;\n    margin-top: 10px;\n    background-color: #ddd;\n    margin-bottom: 0;\n    border-radius: 5px;\n  }\n  div.nav ul li {\n    padding: 5px 10px;\n    margin: 0;\n    border-bottom: 1px solid black;\n    display: inline-block;\n    width: 50%;\n  }\n  .subsection {\n    font-size: 2em;\n  }\n  .subsection h2 {\n    display: none;\n  }\n  .subsection ul.brands img {\n    height: 50px;\n  }\n}\n", ""]);
+	exports.push([module.id, "* {\n  font-family: helvetica;\n  font-weight: lighter;\n}\na,\na:hover,\na:focus,\na:link {\n  text-decoration: none;\n  color: #333333;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n}\ndiv.nav {\n  background: #eeeeee;\n  text-align: center;\n  padding: 15px;\n}\ndiv.nav .active li {\n  background-color: #f67811;\n  border-radius: 5px;\n}\ndiv.nav ul {\n  padding: 20px 0;\n  list-style: none;\n}\ndiv.nav ul li {\n  padding: 10px 0px;\n  border-bottom: 1px solid black;\n}\ndiv.nav ul li:last-child {\n  border-bottom: none;\n}\n.content {\n  text-align: center;\n  padding-bottom: 20px;\n}\n.content .row {\n  padding-top: 10px;\n}\n#banner {\n  padding: 15px 0px;\n  background: #eeeeee;\n}\n#banner img {\n  height: 100px;\n}\ndl,\ndd,\ndt {\n  margin: 0px;\n  padding: 0px;\n}\ndt {\n  font-weight: bold;\n}\n.subsection {\n  padding: 20px;\n}\n.about {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n.pricing table {\n  text-align: left;\n}\n.pricing table th {\n  font-weight: bold;\n}\n.pricing table th:first-child {\n  font-weight: normal;\n}\n.pricing ul.brands {\n  list-style: none;\n  padding: 0px;\n}\n.pricing ul.brands img {\n  height: 45px;\n  padding-bottom: 5px;\n  margin: auto;\n}\n.pricing ul.brands a {\n  border-bottom: 5px solid white;\n}\n.pricing ul.brands .active {\n  border-bottom: 5px solid #f67811;\n}\n.pricing ul.brands li {\n  padding: 3px 10px;\n  width: 100%;\n}\n@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px), screen and (max-width: 740px) {\n  #banner {\n    display: none;\n  }\n  .content {\n    display: block;\n  }\n  div.nav {\n    display: inline-block;\n    background: none;\n    width: 100%;\n    padding: 5px;\n    font-size: 3em;\n  }\n  div.nav ul {\n    padding: 5px;\n    list-style: none;\n    text-align: center;\n    margin-top: 10px;\n    background-color: #ddd;\n    margin-bottom: 0;\n    border-radius: 5px;\n  }\n  div.nav ul li {\n    padding: 5px 10px;\n    margin: 0;\n    border-bottom: 1px solid black;\n    display: inline-block;\n    width: 50%;\n  }\n  .subsection {\n    font-size: 2em;\n  }\n  .subsection h2 {\n    display: none;\n  }\n}\n", ""]);
 
 /***/ },
 /* 9 */
@@ -471,12 +471,14 @@
 	module.exports = React.createClass({displayName: 'exports',
 	  render: function() {
 	    return (
-	      React.createElement("div", {className: "pricing subsection"}, 
-	        React.createElement("p", {className: "disclaimer"}, "*Please note that blah blah blah."), 
-	        React.createElement("ul", {className: "brands"}, 
-	          React.createElement(Link, {to: "samsung"}, React.createElement("li", null, React.createElement("img", {src: "http://upload.wikimedia.org/wikipedia/fa/9/9b/Samsung_Logo.svg.png"}))), 
-	          React.createElement(Link, {to: "apple"}, React.createElement("li", null, React.createElement("img", {src: "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png"}))), 
-	          React.createElement(Link, {to: "lg"}, React.createElement("li", null, React.createElement("img", {src: "http://upload.wikimedia.org/wikipedia/it/0/0e/LGlogo.png"})))
+	      React.createElement("div", {className: "pricing row"}, 
+	        React.createElement("p", {className: "col-xs-10 col-xs-offset-1"}, "*Please note that blah blah blah."), 
+	        React.createElement("ul", {className: "brands col-xs-12 col-sm-10 col-sm-offset-1"}, 
+	          React.createElement("div", {className: "row"}, 
+	            React.createElement(Link, {className: "col-xs-4", to: "samsung"}, React.createElement("li", null, React.createElement("img", {className: "img-responsive", src: "http://upload.wikimedia.org/wikipedia/fa/9/9b/Samsung_Logo.svg.png"}))), 
+	            React.createElement(Link, {className: "col-xs-4", to: "apple"}, React.createElement("li", null, React.createElement("img", {className: "img-responsive", src: "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png"}))), 
+	            React.createElement(Link, {className: "col-xs-4", to: "lg"}, React.createElement("li", null, React.createElement("img", {className: "img-responsive", src: "http://upload.wikimedia.org/wikipedia/it/0/0e/LGlogo.png"})))
+	          )
 	        ), 
 
 	        React.createElement(RouteHandler, null)
@@ -21295,8 +21297,8 @@
 	 */
 
 	var base64 = __webpack_require__(207)
-	var ieee754 = __webpack_require__(205)
-	var isArray = __webpack_require__(204)
+	var ieee754 = __webpack_require__(204)
+	var isArray = __webpack_require__(205)
 
 	exports.Buffer = Buffer
 	exports.SlowBuffer = Buffer
@@ -24107,45 +24109,6 @@
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
-	/**
-	 * isArray
-	 */
-
-	var isArray = Array.isArray;
-
-	/**
-	 * toString
-	 */
-
-	var str = Object.prototype.toString;
-
-	/**
-	 * Whether or not the given `val`
-	 * is an array.
-	 *
-	 * example:
-	 *
-	 *        isArray([]);
-	 *        // > true
-	 *        isArray(arguments);
-	 *        // > false
-	 *        isArray('');
-	 *        // > false
-	 *
-	 * @param {mixed} val
-	 * @return {bool}
-	 */
-
-	module.exports = isArray || function (val) {
-	  return !! val && '[object Array]' == str.call(val);
-	};
-
-
-/***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
 	exports.read = function(buffer, offset, isLE, mLen, nBytes) {
 	  var e, m,
 	      eLen = nBytes * 8 - mLen - 1,
@@ -24229,6 +24192,45 @@
 	  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8);
 
 	  buffer[offset + i - d] |= s * 128;
+	};
+
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * isArray
+	 */
+
+	var isArray = Array.isArray;
+
+	/**
+	 * toString
+	 */
+
+	var str = Object.prototype.toString;
+
+	/**
+	 * Whether or not the given `val`
+	 * is an array.
+	 *
+	 * example:
+	 *
+	 *        isArray([]);
+	 *        // > true
+	 *        isArray(arguments);
+	 *        // > false
+	 *        isArray('');
+	 *        // > false
+	 *
+	 * @param {mixed} val
+	 * @return {bool}
+	 */
+
+	module.exports = isArray || function (val) {
+	  return !! val && '[object Array]' == str.call(val);
 	};
 
 

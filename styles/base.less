@@ -14,15 +14,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
-.disclaimer {
-  font-size: 10px;
-}
-.split {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  padding: 20px;
-}
 div.nav {
   background: @banner-color;
   text-align: center;
@@ -49,6 +40,11 @@ div.nav {
 }
 .content {
   text-align: center;
+  padding-bottom: 20px;
+
+  .row {
+    padding-top: 10px;
+  }
 }
 #banner {
   padding: 15px 0px;
@@ -68,8 +64,11 @@ dt {
 .subsection {
   padding: 20px;
 }
+.about {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .pricing {
-
   table {
     text-align: left;
 
@@ -87,23 +86,23 @@ dt {
     padding: 0px;
 
     img {
-      height: 70px;
+      height: 45px;
       padding-bottom: 5px;
+      margin: auto;
     }
 
     a {
       border-bottom: 5px solid white;
-      display: inline-block; 
-      width: 33%;
+      // display: inline-block;
     }
 
     .active {
       border-bottom: 5px solid @primary-orange;
-      display: inline-block;
+      // display: inline-block;
     }
 
     li {
-      display: inline-block;
+      // display: inline-block;
       padding: 3px 10px;
       width: 100%;
     }
@@ -150,12 +149,6 @@ screen and (max-width: 740px) {
 
     h2 {
       display: none;
-    }
-
-    ul.brands {
-      img {
-        height: 50px;
-      }
     }
   }
 }
