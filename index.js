@@ -19,10 +19,10 @@ var App = React.createClass({
     return (
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-xs-12 col-sm-2'>
+          <div className='col-xs-12 col-md-2'>
             <div className='nav'>
               <Link to="home" className='hidden-xs'>
-                <img src="images/celltech_logo.png" className="img-responsive hidden-xs"/>
+                <img src="images/celltech_logo.png" className="img-responsive hidden-sm"/>
               </Link>
               <ul>
                 <Link to="about"><li>About</li></Link>
@@ -30,8 +30,8 @@ var App = React.createClass({
               </ul>
             </div>
           </div>
-          <div className="content col-xs-12 col-sm-10">
-            <div className='hidden-xs' id="banner">
+          <div className="content col-xs-12 col-md-10">
+            <div className='hidden-sm' id="banner">
               <img src="images/celltech_banner.png"/>
             </div>
             <RouteHandler/>
