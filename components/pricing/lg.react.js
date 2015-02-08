@@ -1,55 +1,32 @@
 var React = require('react');
+var Model = require('./model.react');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <table className="table table-hover table-striped table-condensed">
-        <thead>
-          <th>
-            {String.fromCharCode(8595) + ' Service'}
-            <span className="divider">|</span>
-            {'Model ' + String.fromCharCode(8594)}
-          </th>
-          <th>3g/s</th>
-          <th>4/s</th>
-          <th>5/s</th>
-          <th>6/+</th>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Digitizer Replacement</td>
-            <td>100</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>LCD Replacement</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>Water Damage</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>Battery Replacement</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-        </tbody>
-      </table>
+      <div style={{'clear': 'both'}}>
+        <h2>LG Models</h2>
+        <ul className="models col-xs-12" style={{'listStyle': 'none', 'paddingLeft': '0', 'paddingRight': '0'}}>
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+          <Model img='http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg' services={this.services} name='Optimus' />
+        </ul>
+      </div>
     );
-  }
+  },
+
+  services: [
+    {
+      name: 'water damage',
+      price: '50'
+    },
+    {
+      name: 'digitizer replacement',
+      price: '75'
+    }
+  ]
 });
