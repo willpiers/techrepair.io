@@ -20,7 +20,7 @@ var App = React.createClass({
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-xs-12 col-md-2'>
-            <div className='nav'>
+            <div className='nav well'>
               <Link to="home" className='logo'>
                 <img src="images/celltech_logo.png" className="img-responsive hidden-xs hidden-sm"/>
                 <img src="images/celltech_banner.png" className="img-responsive visible-xs-block visible-sm-block"/>
@@ -32,7 +32,7 @@ var App = React.createClass({
             </div>
           </div>
           <div className="content col-xs-12 col-md-10">
-            <div className='hidden-sm hidden-xs' id="banner">
+            <div className='well hidden-sm hidden-xs' id="banner">
               <img src="images/celltech_banner.png"/>
             </div>
             <RouteHandler/>

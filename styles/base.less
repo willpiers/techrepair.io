@@ -1,4 +1,3 @@
-@banner-color: #eee;
 @primary-orange: rgb(246, 120, 17);
 
 * {
@@ -15,9 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 div.nav {
-  background: none;
   text-align: center;
-  padding: 10px;
 
   a.logo img {
     margin-bottom: 30px;
@@ -31,9 +28,9 @@ div.nav {
   ul {
     list-style: none;
     padding: 5px;
-    background-color: #ddd;
     border-radius: 5px;
     font-size: 2em;
+    margin-bottom: 0;
 
     a {
       padding: 0;
@@ -58,9 +55,6 @@ div.nav {
   }
 }
 #banner {
-  padding: 15px 0px;
-  background: @banner-color;
-
   img {
     height: 100px;
   }
@@ -112,9 +106,8 @@ dt {
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   div.nav {
-    background: @banner-color;
 
     ul {
       display: inline-block;
