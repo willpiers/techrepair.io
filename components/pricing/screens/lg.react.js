@@ -1,4 +1,4 @@
-var React = require('react');
+var React = require('react/addons');
 var Model = require('../shared/model.react');
 var models = require('../shared/models.json').lg;
 var _ = require('lodash');
@@ -23,11 +23,11 @@ module.exports = React.createClass({
 
   addClearfixes: function(models) {
     return _.map(models, function(model, index) {
-      index = index + 1
+      index = index + 1;
       if (index % 6 === 0) {
         return [model, <div className='clearfix hidden-lg'></div>];
       } else if (index % 4 === 0) {
-        return [model, <div className='clearfix visible-lg-block'></div>];
+        return [model, <div className='clearfix visible-lg-block visible-xs-block'></div>];
       } else if (index % 3 === 0) {
         return [model, <div className='clearfix visible-sm-block visible-md-block'></div>];
       } else if (index % 2 === 0) {
