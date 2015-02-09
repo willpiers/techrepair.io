@@ -1,0 +1,89 @@
+{
+  "apple": {
+    "iPhone 3g": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "services": [
+        {
+          "name": "phone is broke as fuck",
+          "price": "two hundred boo"
+        }
+      ]
+    }
+  },
+  "lg": {
+    "optimus1": {
+      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+      "services": [
+        {
+          "name": "water damage",
+          "price": "50"
+        },
+        {
+          "name": "digitizer replacement",
+          "price": "75"
+        },
+        {
+          "name": "another",
+          "price": "service"
+        }
+      ]
+    },
+    "optimus2": {
+      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+      "services": [
+        {
+          "name": "water damage",
+          "price": "50"
+        },
+        {
+          "name": "digitizer replacement",
+          "price": "75"
+        }
+      ]
+    },
+    "optimus3": {
+      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+      "services": [
+        {
+          "name": "water damage",
+          "price": "50"
+        },
+        {
+          "name": "digitizer replacement",
+          "price": "75"
+        },
+        {
+          "name": "another",
+          "price": "service"
+        }
+      ]
+    },
+    "optimus4": {
+      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+      "services": [
+        {
+          "name": "water damage",
+          "price": "50"
+        },
+        {
+          "name": "digitizer replacement",
+          "price": "75"
+        }
+      ]
+    },
+    "optimus5": {
+      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+      "services": [
+        {
+          "name": "water damage",
+          "price": "50"
+        },
+        {
+          "name": "digitizer replacement",
+          "price": "75"
+        }
+      ]
+    }
+  },
+  "samsung": {}
+}

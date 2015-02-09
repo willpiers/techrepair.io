@@ -1,55 +1,40 @@
 var React = require('react');
+var Model = require('./model.react');
+var models = require('./models.json').samsung;
+var _ = require('lodash');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <table className="table table-hover table-striped table-condensed">
-        <thead>
-          <th>
-            {String.fromCharCode(8595) + ' Service'}
-            <span className="divider">|</span>
-            {'Model ' + String.fromCharCode(8594)}
-          </th>
-          <th>3g/s</th>
-          <th>4/s</th>
-          <th>5/s</th>
-          <th>6/+</th>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Digitizer Replacement</td>
-            <td>500</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>LCD Replacement</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>Water Damage</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-
-          <tr>
-            <td>Battery Replacement</td>
-            <td>50</td>
-            <td>40</td>
-            <td>45</td>
-            <td>75</td>
-          </tr>
-        </tbody>
-      </table>
+      <div style={{'clear': 'both'}}>
+        <h2>Samsung Models</h2>
+        <ul className="models col-xs-12" style={{'listStyle': 'none', 'paddingLeft': '0', 'paddingRight': '0'}}>
+          {this.addClearfixes(this.getModels())}
+        </ul>
+      </div>
     );
+  },
+
+  getModels: function() {
+    return _.map(models, function(model, name) {
+      return <Model img={model.image} services={model.services} name={name}/>
+    });
+  },
+
+  addClearfixes: function(models) {
+    return _.map(models, function(model, index) {
+      index = index + 1
+      if (index % 6 === 0) {
+        return [model, <div className='clearfix hidden-lg'></div>];
+      } else if (index % 4 === 0) {
+        return [model, <div className='clearfix visible-lg-block'></div>];
+      } else if (index % 3 === 0) {
+        return [model, <div className='clearfix visible-sm-block visible-md-block'></div>];
+      } else if (index % 2 === 0) {
+        return [model, <div className='clearfix visible-xs-block'></div>];   
+      } else {
+        return model;
+      }
+    });
   }
 });

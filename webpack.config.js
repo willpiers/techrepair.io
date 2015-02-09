@@ -15,6 +15,10 @@ module.exports = {
         loader: 'jsx-loader',
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
+      {
       	test: /\.less$/,
       	loader: 'style-loader!css-loader!less-loader'
       },
