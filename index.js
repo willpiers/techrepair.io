@@ -10,9 +10,12 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
-var Pricing = require('./components/pricing/index');
 var About = require('./components/about/about.react');
 var Home = require('./components/home/home.react');
+var Pricing = require('./components/pricing/index.react');
+var Apple = require('./components/pricing/screens/apple.react');
+var Samsung = require('./components/pricing/screens/samsung.react');
+var LG = require('./components/pricing/screens/lg.react');
 
 var App = React.createClass({
   render: function () {
@@ -45,11 +48,11 @@ var App = React.createClass({
 
 var routes = (
   <Route name="home" path="/" handler={App}>
-    <Route name="pricing" handler={Pricing.Main}>
-      <Route name="apple" handler={Pricing.Apple}/>
-      <Route name="samsung" handler={Pricing.Samsung}/>
-      <Route name="lg" handler={Pricing.Lg}/>
-      <DefaultRoute handler={Pricing.Apple}/>
+    <Route name="pricing" handler={Pricing}>
+      <Route name="apple" handler={Apple}/>
+      <Route name="samsung" handler={Samsung}/>
+      <Route name="lg" handler={LG}/>
+      <DefaultRoute handler={Apple}/>
     </Route>
     <Route name="about" handler={About}/>
 

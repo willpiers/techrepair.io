@@ -1,6 +1,6 @@
 var React = require('react');
-var Model = require('./model.react');
-var models = require('./models.json').lg;
+var Model = require('../shared/model.react');
+var models = require('../shared/models.json').lg;
 var _ = require('lodash');
 
 module.exports = React.createClass({
