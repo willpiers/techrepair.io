@@ -1,11 +1,94 @@
 {
   "apple": {
-    "iPhone 3g": {
+    "iPhone 3g/3gs": {
       "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
       "services": [
         {
-          "name": "phone is broke as fuck",
-          "price": "two hundred boo"
+          "name": "Digitizer/LCD Repair",
+          "price": "$50"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$40"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "iPhone 4/4s": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Repair",
+          "price": "$60"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$30"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "iPhone 5": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Repair",
+          "price": "$70"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$40"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$40"
+        },
+        {
+          "name": "Power/volume Button Replacement",
+          "price": "$50"
+        },
+        {
+          "name": "Home Button Replacement",
+          "price": "$50"
+        },
+        {
+          "name": "Charge Port Replacement",
+          "price": "$50"
+        }
+      ]
+    },
+    "iPhone 5s/5c": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Repair",
+          "price": "$80"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$40"
+        },
+        {
+          "name": "Power/volume Button Replacement",
+          "price": "$50"
+        },
+        {
+          "name": "Home Button Replacement",
+          "price": "$50"
+        },
+        {
+          "name": "Charge Port Replacement",
+          "price": "$50"
         }
       ]
     }
