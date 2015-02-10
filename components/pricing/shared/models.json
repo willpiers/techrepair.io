@@ -18,7 +18,7 @@
       ]
     },
     "iPhone 4/4s": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -35,7 +35,7 @@
       ]
     },
     "iPhone 5": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/KVbXAtic2yB1htOd.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -64,7 +64,8 @@
       ]
     },
     "iPhone 5s/5c": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/sX5iMoIvYMbCvHoF.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/1QluZIfJXBuQIVZn.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -94,76 +95,37 @@
     }
   },
   "lg": {
-    "optimus1": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+    "LG G2": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/V53VhHtNrs6seTun.standard",
       "services": [
         {
-          "name": "water damage",
-          "price": "50"
+          "name": "Digitizer/LCD Repair",
+          "price": "$90"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
+          "name": "Water Damage",
+          "price": "$50"
         },
         {
-          "name": "another",
-          "price": "service"
+          "name": "Battery Replacement",
+          "price": "$50"
         }
       ]
     },
-    "optimus2": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+    "Optimus G Pro": {
+      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
       "services": [
         {
-          "name": "water damage",
-          "price": "50"
+          "name": "Digitizer/LCD Repair",
+          "price": "$60"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
-        }
-      ]
-    },
-    "optimus3": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
+          "name": "Water Damage",
+          "price": "$40"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
-        },
-        {
-          "name": "another",
-          "price": "service"
-        }
-      ]
-    },
-    "optimus4": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
-        },
-        {
-          "name": "digitizer replacement",
-          "price": "75"
-        }
-      ]
-    },
-    "optimus5": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
-        },
-        {
-          "name": "digitizer replacement",
-          "price": "75"
+          "name": "Battery Replacement",
+          "price": "$30"
         }
       ]
     }
