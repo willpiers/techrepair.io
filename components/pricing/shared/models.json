@@ -60,7 +60,7 @@
         {
           "name": "Charge Port Replacement",
           "price": "$50"
-        },
+        }
       ]
     },
     "iPhone 5s/5c": {
@@ -89,9 +89,9 @@
         {
           "name": "Charge Port Replacement",
           "price": "$50"
-        },
+        }
       ]
-    },
+    }
   },
   "lg": {
     "optimus1": {
