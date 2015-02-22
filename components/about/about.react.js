@@ -5,7 +5,7 @@ var About = React.createClass({
   render: function() {
     return (
       <div className="about row">
-        <img className="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0" src="images/john.jpg"/>
+        <img style={{ 'margin-bottom': '10px' }} className="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0" src="images/john.jpg"/>
         
         <div className="col-xs-12 col-sm-8">
           <p>Hello! My name is John - I’m a self-taught, tech repair specialist currently living in downtown Fort Collins. <Link to='home'>CellTech Repairs</Link> is a business I started during my final semester of college and because its independently run, I guarantee that I can beat any competitor’s price!</p>

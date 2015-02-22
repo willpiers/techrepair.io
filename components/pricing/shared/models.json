@@ -93,7 +93,7 @@
       ]
     },
     "iPhone 6/+": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/H4M1JEQiZabe4Vo2.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -110,7 +110,7 @@
       ]
     },
     "iPad Mini": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/AUyYoTvgxKMq5kC2.standard",
       "services": [
         {
           "name": "Digitizer Replacement",
@@ -127,7 +127,7 @@
       ]
     },
     "iPad Air": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/SHY36sqLX3l6rklL.standard",
       "services": [
         {
           "name": "Digitizer Replacement",
@@ -152,7 +152,7 @@
       ]
     },
     "iPod Touch gen 4": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/3YJRb3imEUnVjQUb.standard",
       "services": [
         {
           "name": "Digitizer/LCD Replacement",
@@ -165,7 +165,7 @@
       ]
     },
     "iPod Touch gen 5": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/TkCynLIjQfTRpGxn.standard",
       "services": [
         {
           "name": "Digitizer/LCD Replacement",
@@ -216,7 +216,7 @@
   },
   "samsung": {
     "S4": {
-      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/IkbwMmBcUkwueGRJ.standard",
       "services": [
         {
           "name": "Digitizer Replacement",
@@ -237,7 +237,7 @@
       ]
     },
     "Note II": {
-      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/bdyD4m46DHNpA2AV.standard",
       "services": [
         {
           "name": "Digitizer Replacement",
@@ -277,7 +277,7 @@
   },
   "htc": {
     "HTC Droid DNA": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/MaZqwNbyPeXQKUTi.standard",
       "services": [
         {
           "name": "Digitizer/LCD Replacement",
@@ -294,7 +294,7 @@
       ]
     },
     "HTC One M7": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/mmQ3Mf1WmIFCPPsG.standard",
       "services": [
         {
           "name": "Digitizer/LCD Replacement",
@@ -311,7 +311,7 @@
       ]
     },
     "HTC One M8": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/mmQ3Mf1WmIFCPPsG.standard",
       "services": [
         {
           "name": "Digitizer/LCD Replacement",
