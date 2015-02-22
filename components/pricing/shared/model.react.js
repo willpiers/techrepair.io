@@ -4,7 +4,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <li className="model col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <div className='well'>
+        <div style={{ 'padding': '5px', 'overflow': 'scroll' }} className='well'>
           <h4>{this.props.name}</h4>
           <img src={this.props.img} style={{'margin': 'auto', 'marginBottom': '15px'}} className='img-responsive'/>
           <table className='table table-condensed'>
