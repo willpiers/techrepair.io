@@ -50,7 +50,7 @@ var App = React.createClass({
 
 var routes = (
   <Route name='app' path='/' handler={App}>
-    <Route name='pricing' handler={Pricing}>
+    <Route name='pricing' ignoreScrollBehavior={true} handler={Pricing}>
       <Route name='apple' handler={Apple}/>
       <Route name='samsung' handler={Samsung}/>
       <Route name='lg' handler={LG}/>
