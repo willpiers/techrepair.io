@@ -7,7 +7,6 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div style={{'clear': 'both'}}>
-        <h2>Apple Models</h2>
         <ul className="models col-xs-12" style={{'listStyle': 'none', 'paddingLeft': '0', 'paddingRight': '0'}}>
           {this.addClearfixes(this.getModels())}
         </ul>

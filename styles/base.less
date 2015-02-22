@@ -1,8 +1,23 @@
 @primary-orange: rgb(246, 120, 17);
 
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 * {
-  font-family: helvetica;
+  font-family: 'raleway';
   font-weight: lighter;
+}
+body {
+  margin-top: 10px;
 }
 a {
   &, &:hover, &:focus, &:link {
@@ -15,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 div.nav {
   text-align: center;
+  margin-bottom: 5px;
 
   a.logo img {
     margin-bottom: 30px;
@@ -22,6 +38,7 @@ div.nav {
 
   .active li {
     background-color: @primary-orange;
+    box-shadow: 1px 1px 3px #575757;
     border-radius: 5px;
   }
 
@@ -53,8 +70,18 @@ div.nav {
   .row {
     padding-top: 10px;
   }
+
+  .about {
+    text-align: justify;
+
+    strong {
+      margin-right: 10px;
+    }
+  }
 }
 #banner {
+  margin-bottom: 5px;
+
   img {
     height: 100px;
   }
@@ -70,6 +97,11 @@ dt {
   padding: 20px;
 }
 .pricing {
+
+  .disclaimer {
+    text-align: left;
+  }
+
   table {
     text-align: left;
 
@@ -85,6 +117,9 @@ dt {
   ul.brands {
     list-style: none;
     padding: 0px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
 
     img {
       height: 45px;

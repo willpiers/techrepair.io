@@ -18,7 +18,7 @@
       ]
     },
     "iPhone 4/4s": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -26,7 +26,7 @@
         },
         {
           "name": "Water Damage",
-          "price": "$30"
+          "price": "$40"
         },
         {
           "name": "Battery Replacement",
@@ -35,7 +35,7 @@
       ]
     },
     "iPhone 5": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/KVbXAtic2yB1htOd.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -64,7 +64,7 @@
       ]
     },
     "iPhone 5s/5c": {
-      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/HrZAcS3cCISuPAt4.standard",
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/1QluZIfJXBuQIVZn.standard",
       "services": [
         {
           "name": "Digitizer/LCD Repair",
@@ -91,82 +91,241 @@
           "price": "$50"
         }
       ]
+    },
+    "iPhone 6/+": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Repair",
+          "price": "Currently Unavailable"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$60"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$45"
+        }
+      ]
+    },
+    "iPad Mini": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer Replacement",
+          "price": "$80"
+        },
+        {
+          "name": "LCD Replacement",
+          "price": "$100"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        }
+      ]
+    },
+    "iPad Air": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer Replacement",
+          "price": "$90"
+        },
+        {
+          "name": "LCD Replacement",
+          "price": "$110"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$80"
+        },
+        {
+          "name": "Wifi/GPS/Cellular Antennae Replacements",
+          "price": "$50"
+        }
+      ]
+    },
+    "iPod Touch gen 4": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$40"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$30"
+        }
+      ]
+    },
+    "iPod Touch gen 5": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$70"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$30"
+        }
+      ]
     }
   },
   "lg": {
-    "optimus1": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+    "LG G2": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/V53VhHtNrs6seTun.standard",
       "services": [
         {
-          "name": "water damage",
-          "price": "50"
+          "name": "Digitizer/LCD Repair",
+          "price": "$90"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
+          "name": "Water Damage",
+          "price": "$50"
         },
         {
-          "name": "another",
-          "price": "service"
+          "name": "Battery Replacement",
+          "price": "$50"
         }
       ]
     },
-    "optimus2": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
+    "Optimus G Pro": {
+      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
       "services": [
         {
-          "name": "water damage",
-          "price": "50"
+          "name": "Digitizer/LCD Repair",
+          "price": "$60"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
-        }
-      ]
-    },
-    "optimus3": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
+          "name": "Water Damage",
+          "price": "$40"
         },
         {
-          "name": "digitizer replacement",
-          "price": "75"
-        },
-        {
-          "name": "another",
-          "price": "service"
-        }
-      ]
-    },
-    "optimus4": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
-        },
-        {
-          "name": "digitizer replacement",
-          "price": "75"
-        }
-      ]
-    },
-    "optimus5": {
-      "image": "http://i.walmartimages.com/i/p/00/61/69/60/03/0061696003880_500X500.jpg",
-      "services": [
-        {
-          "name": "water damage",
-          "price": "50"
-        },
-        {
-          "name": "digitizer replacement",
-          "price": "75"
+          "name": "Battery Replacement",
+          "price": "$30"
         }
       ]
     }
   },
-  "samsung": {}
+  "samsung": {
+    "S4": {
+      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
+      "services": [
+        {
+          "name": "Digitizer Replacement",
+          "price": "$90"
+        },
+        {
+          "name": "LCD Replacement",
+          "price": "$230"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "Note II": {
+      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
+      "services": [
+        {
+          "name": "Digitizer Replacement",
+          "price": "$90"
+        },
+        {
+          "name": "LCD Replacement",
+          "price": "$230"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "Tab III": {
+      "image": "http://ts3.mm.bing.net/th?id=HN.607989094068193509&w=240&h=183&c=7&rs=1&qlt=90&o=4&pid=1.7",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$75"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$50"
+        }
+      ]
+    }
+  },
+  "htc": {
+    "HTC Droid DNA": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$75"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$40"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "HTC One M7": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$90"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    },
+    "HTC One M8": {
+      "image": "https://d3nevzfk7ii3be.cloudfront.net/igi/qV2UinVhSchxgPGo.standard",
+      "services": [
+        {
+          "name": "Digitizer/LCD Replacement",
+          "price": "$110"
+        },
+        {
+          "name": "Water Damage",
+          "price": "$50"
+        },
+        {
+          "name": "Battery Replacement",
+          "price": "$30"
+        }
+      ]
+    }
+  }
 }

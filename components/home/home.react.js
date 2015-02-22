@@ -1,10 +1,13 @@
 var React = require('react');
+var Link = require('react-router').Link;
 
 var Home = React.createClass({
   render: function() {
     return (
       <div className="home">
-        <p>Copy about how great John&#39;s business is an why you should choose it over any other repair service</p>
+        <p>Welcome to CellTech Repairs - an independently managed tech-repair business!</p>
+        <p>Feel free to check out common repair types/prices, or <Link to='about'>contact me</Link> directly for a more personalized quote.</p>
+        <p>Thanks for stopping by!</p>
       </div>
     );
   }

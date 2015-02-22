@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: "./index.js",
   output: {
@@ -28,8 +30,15 @@ module.exports = {
       },
       {
         test: /\.(gif|png|ttf|jpg)$/,
-        loader: 'url-loader?limit=100000&mimetype=image/gif'
+        loader: 'url-loader?limit=1000000&mimetype=image/gif'
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          warnings: false
+      }
+    })
+  ]
 }
