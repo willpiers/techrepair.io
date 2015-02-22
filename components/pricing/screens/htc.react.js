@@ -1,6 +1,6 @@
 var React = require('react');
 var Model = require('../shared/model.react');
-var models = require('../shared/models.json').samsung;
+var models = require('../shared/models.json').htc;
 var _ = require('lodash');
 
 module.exports = React.createClass({

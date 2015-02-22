@@ -16,6 +16,7 @@ var Pricing = require('./components/pricing/index.react');
 var Apple = require('./components/pricing/screens/apple.react');
 var Samsung = require('./components/pricing/screens/samsung.react');
 var LG = require('./components/pricing/screens/lg.react');
+var HTC = require('./components/pricing/screens/htc.react');
 
 var App = React.createClass({
   render: function () {
@@ -24,19 +25,20 @@ var App = React.createClass({
         <div className='row'>
           <div className='col-xs-12 col-md-2'>
             <div className='nav well'>
-              <Link to="home" className='logo'>
-                <img src="images/celltech_logo.png" className="img-responsive hidden-xs hidden-sm"/>
-                <img src="images/celltech_banner.png" className="img-responsive visible-xs-block visible-sm-block"/>
+              <Link to='home' className='logo'>
+                <img src='images/celltech_logo.png' className='img-responsive hidden-xs hidden-sm'/>
+                <img src='images/celltech_banner.png' className='img-responsive visible-xs-block visible-sm-block'/>
               </Link>
               <ul className='row'>
-                <Link className='col-xs-6 col-sm-12' to="about"><li>About</li></Link>
-                <Link className='col-xs-6 col-sm-12' to="pricing"><li>Pricing</li></Link>
+                <Link className='col-md-12 hidden-xs hidden-sm' to='home'><li>Home</li></Link>
+                <Link className='col-xs-6 col-sm-12' to='pricing'><li>Pricing</li></Link>
+                <Link className='col-xs-6 col-sm-12' to='about'><li>About</li></Link>
               </ul>
             </div>
           </div>
-          <div className="content col-xs-12 col-md-10">
-            <div className='well hidden-sm hidden-xs' id="banner">
-              <img src="images/celltech_banner.png"/>
+          <div className='content col-xs-12 col-md-10'>
+            <div className='well hidden-sm hidden-xs' id='banner'>
+              <img src='images/celltech_banner.png'/>
             </div>
             <RouteHandler/>
           </div>
@@ -47,14 +49,16 @@ var App = React.createClass({
 });
 
 var routes = (
-  <Route name="home" path="/" handler={App}>
-    <Route name="pricing" handler={Pricing}>
-      <Route name="apple" handler={Apple}/>
-      <Route name="samsung" handler={Samsung}/>
-      <Route name="lg" handler={LG}/>
+  <Route name='app' path='/' handler={App}>
+    <Route name='pricing' handler={Pricing}>
+      <Route name='apple' handler={Apple}/>
+      <Route name='samsung' handler={Samsung}/>
+      <Route name='lg' handler={LG}/>
+      <Route name='htc' handler={HTC}/>
       <DefaultRoute handler={Apple}/>
     </Route>
-    <Route name="about" handler={About}/>
+    <Route name='about' handler={About}/>
+    <Route name='home' handler={Home}/>
 
     <DefaultRoute handler={Home}/>
   </Route>
