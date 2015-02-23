@@ -9,6 +9,7 @@ var NotFoundRoute = Router.NotFoundRoute;
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
+var Redirect = Router.Redirect;
 
 var About = require('./components/about/about.react');
 var Home = require('./components/home/home.react');
@@ -52,7 +53,9 @@ var routes = (
       <Route name='samsung' handler={Samsung}/>
       <Route name='lg' handler={LG}/>
       <Route name='htc' handler={HTC}/>
-      <DefaultRoute handler={Apple}/>
+
+      <DefaultRoute handler={Samsung}/>
+      <Redirect from='/pricing' to='/pricing/samsung'/>
     </Route>
     <Route name='about' handler={About}/>
     <Route name='home' handler={Home}/>
